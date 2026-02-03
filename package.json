@@ -1,6 +1,6 @@
 {
   "name": "@jpisnice/shadcn-ui-mcp-server",
-  "version": "1.1.4",
+  "version": "2.0.0",
   "description": "A Model Context Protocol (MCP) server for shadcn/ui components, providing AI assistants with access to component source code, demos, blocks, and metadata.",
   "type": "module",
   "main": "./build/index.js",
@@ -31,7 +31,8 @@
     "version:minor": "node scripts/bump-version.js minor",
     "version:major": "node scripts/bump-version.js major",
     "publish:auto": "powershell -ExecutionPolicy Bypass -File scripts/publish.ps1",
-    "publish:quick": "powershell -ExecutionPolicy Bypass -File scripts/publish.ps1 -SkipTests -Force"
+    "publish:quick": "powershell -ExecutionPolicy Bypass -File scripts/publish.ps1 -SkipTests -Force",
+    "publish:direct": "npm publish --access public --ignore-scripts"
   },
   "keywords": [
     "mcp",

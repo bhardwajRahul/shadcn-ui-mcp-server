@@ -9,7 +9,38 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 test-package.sh
+test-package.ps1
 examples.sh
+mcp-server.log
+
+# Scripts and automation
+scripts/
+.github/
+
+# Docker and deployment files
+Dockerfile
+docker-compose.yml
+nginx.conf
+.dockerignore
+
+# Binary files and archives
+*.mcpb
+*.zip
+*.tar.gz
+*.exe
+*.dll
+*.so
+*.dylib
+icon.png
+
+# MCPB manifest (not needed in npm package)
+manifest.json
+
+# Documentation that's not needed in package
+docs/
+CONTRIBUTING.md
+V4_MIGRATION_SUMMARY.md
+SSE_IMPLEMENTATION.md
 
 # OS generated files
 .DS_Store
@@ -38,11 +69,8 @@ tests/
 *.spec.js
 *.spec.ts
 
-# Documentation that's not needed in package
-docs/
-CONTRIBUTING.md
-V4_MIGRATION_SUMMARY.md
-
 # Git files
 .git/
 .gitignore
+.cursor/
+.plans/
